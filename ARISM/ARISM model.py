@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Spyder Editor
-
+WRITOR:   WANG BAO RUI
 This is a temporary script file.
 """
 
@@ -35,7 +35,7 @@ filename_ts = 'train_1.csv'
 ts_df = pd.read_csv(filename_ts,index_col=0,parse_dates=[0])
 n_sample = ts_df.shape[0]
 
-##进行数据划分
+##spilit the data
 n_train=int(0.95*n_sample)+1
 n_forecast = n_sample - n_train
 ts_train = ts_df.iloc[0:n_train]['value']
